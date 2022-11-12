@@ -1,0 +1,17 @@
+.btn{
+    background-color: black;
+}
+.general{
+    width: 70%;
+    position:absolute;
+  
+    transition: all 0.8s;
+    transform: translateY(10%);
+}
+.dn{
+    transform: translateY(-200%);
+    width: 50%;
+   
+    position:absolute;
+
+}
