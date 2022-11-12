@@ -1,0 +1,46 @@
+.img-li{
+    width: 40px;
+}
+.ul-header{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 0;
+}
+.li-header{
+    list-style-type: none;
+}
+.tryzub{
+    width: 100px;
+}
+.tryzub-div{
+    display: grid;
+    justify-content: center;
+}
+main{
+    background-color: rgb(74, 74, 204);
+}
+.info-main-text{
+    width: 100%
+}
+.duty-img{
+    width: 95%;
+}
+.text-with-img{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.text-info{
+    font-size: 170%;
+}
+.text-li{
+    font-size: 150%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Main from './components/Main';
+import Header from './components/header/Header';
+import Vnutrichnia from './components/vnutrichnia/Vnutrichnia';
+import{ BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Footer from './components/footer/Footer';
+import Garrison from './components/garrison/Garrison';
+import Guard from './components/guard/Guard';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header></Header>  
+      <Router>
+        <Routes> 
+        <Route exact path="/"    element={<Main/>}/>
+          <Route exact path="/internal-serve"    element={<Vnutrichnia/>}/>
+          <Route exact path="/garrisone-serve"    element={<Garrison/>}/>
+          <Route exact path="/guard-serve"    element={<Guard/>}/>
+        </Routes>
+      </Router>
+      <a className='link-to-statut '  target="_blank" href='https://zakon.rada.gov.ua/laws/show/550-14#Text'>Статут гарнізонної та вартової служб Збройних Сил України</a>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.img-v{
+    width: 60%;
+    float: left;
+    margin: 10px;
+}
+.text-v{
+    float: right;
+    font-size: 150%;
+}
+body{
+    background-color: rgb(74, 74, 204);
+}
+.bolt{
+    font-weight: bold;
+}
